@@ -1,0 +1,94 @@
+.tr{
+    background-color: #DFDFDF;
+}
+
+.formContainer{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 3px 8px 1px #969696;
+  	-webkit-box-shadow: 4px 3px 8px 1px #969696;
+    
+    
+}
+
+.form-group{
+    margin-top: 15px;
+}
+
+
+
+
+.formContainer label{
+    font-weight: 600;
+}
+
+.formContainer button{
+    
+    font-size: 1rem;
+   
+}
+
+.formContainer input{
+    width: 100%;
+}
+
+.row{
+
+    margin-top: 20px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.divButton{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.divButton button{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.container1{
+    width: 1120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.caixa1{
+    width: 150%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+table{
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    
+}
+
+.thButton{
+    font-size: 1.5rem;
+    text-align: center;
+    
+    
+}
+
+.butaoAtt{
+    margin: 30px;
+}
+
+
+
+
+
