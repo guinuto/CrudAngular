@@ -1,27 +1,28 @@
-using CRUDAPI.Models;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
+using CRUDAPI;
 
 namespace CRUDAPI.Models;
 
+
+    [Authorize]
     [ApiController]
-    [Route("api/EventoRepository")]
+    [Route("api/Usuarios")]
     public class EventoRepository : IEventoRepository
     {
+        
+
+
         private readonly DatabaseContext _context;
         public EventoRepository(DatabaseContext ctx )
         {
             _context = ctx;
         }
 
-        [HttpDelete ("{EventoId}")]
-        public bool Excluir(int EventoId)
+        [HttpDelete ("{UsuarioId}")]
+        public bool Excluir(int UsuarioId)
         {
-            var obj = this.Obter(EventoId);
+            var obj = this.Obter(UsuarioId);
             if (obj == null)
                 return false;
 
@@ -30,35 +31,36 @@ namespace CRUDAPI.Models;
             return true;
         }
 
-        [HttpPost]
-        public EventoModel Incluir(EventoModel obj)
+        [HttpPost ]
+        public EventoModel Incluir(EventoModel usuario)
         {
-            _context.Add(obj);
+            _context.Add(usuario);
             _context.SaveChanges();
-            return obj;
+            return usuario;
         }
 
-        [HttpPut]
-        public EventoModel Alterar(EventoModel obj)
+        [HttpPut ]
+        public EventoModel Alterar(EventoModel usuario)
         {
-            var Dobj = this.Obter(obj.usuarioId);
+            var Dobj = this.Obter(usuario.usuarioId);
             if(Dobj == null){
                 return null;
             }
             _context.Remove(Dobj);
-            _context.Add(obj);
+            _context.Add(usuario);
             _context.SaveChanges();
             return null;
         }
 
+        [HttpGet]
         public IEnumerable<EventoModel> Listar()
         {
             return _context.Eventos.ToList();
         }
 
-        [HttpGet("{EventoId}")]
-        public EventoModel Obter(int EventoId)
+        [HttpGet("{UsuarioId}")]
+        public EventoModel Obter(int UsuarioId)
         {
-            return _context.Eventos.Where(a => a.usuarioId == EventoId).FirstOrDefault();
+            return _context.Eventos.Where(a => a.usuarioId == UsuarioId).FirstOrDefault();
         }
     }

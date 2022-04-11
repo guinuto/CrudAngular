@@ -5,7 +5,8 @@ import { Usuario } from './Usuario';
 
 const httpOptions = {
   headers: new HttpHeaders({
-    'Content-Type' : 'application/json'
+    'Content-Type' :'application/json',
+    'Authorization':'Basic YWRtaW46MTIzNDU2'
   })
 }
 
@@ -16,16 +17,16 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class UsuariosService {
-  url = 'https://localhost:7279/api/EventoRepository';
+  url = 'https://localhost:7279/api/Usuarios';
   constructor(private http: HttpClient) { }
 
   PegarTodos(): Observable<Usuario[]>{
-    return this.http.get<Usuario[]>(this.url)
+    return this.http.get<Usuario[]>(this.url,httpOptions)
   }
 
   PegarPeloId(usuarioId:number): Observable<Usuario>{
     const apiUrl = `${this.url}/${usuarioId}`;
-    return this.http.get<Usuario>(apiUrl);
+    return this.http.get<Usuario>(apiUrl,httpOptions);
   }
 
   SalvarUsuario(usuario : Usuario) : Observable<any>{

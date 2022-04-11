@@ -32,3 +32,11 @@ C:\Users\guilherme.santos\Desktop\Teste1\CRUDAPI\obj\Debug\net6.0\refint\CRUDAPI
 C:\Users\guilherme.santos\Desktop\Teste1\CRUDAPI\obj\Debug\net6.0\CRUDAPI.pdb
 C:\Users\guilherme.santos\Desktop\Teste1\CRUDAPI\obj\Debug\net6.0\CRUDAPI.genruntimeconfig.cache
 C:\Users\guilherme.santos\Desktop\Teste1\CRUDAPI\obj\Debug\net6.0\ref\CRUDAPI.dll
+C:\Users\guilherme.santos\Desktop\Teste1\crudapi\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\guilherme.santos\Desktop\Teste1\crudapi\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\guilherme.santos\Desktop\Teste1\crudapi\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\guilherme.santos\Desktop\Teste1\crudapi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\guilherme.santos\Desktop\Teste1\crudapi\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\guilherme.santos\Desktop\Teste1\crudapi\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\guilherme.santos\Desktop\Teste1\crudapi\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\guilherme.santos\Desktop\Teste1\crudapi\bin\Debug\net6.0\System.Security.Permissions.dll

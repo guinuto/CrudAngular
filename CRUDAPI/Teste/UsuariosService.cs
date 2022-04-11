@@ -29,6 +29,8 @@ namespace CRUDAPI.Models;
             Console.ReadKey();
         }
 
+        
+
         public void GerarDadosTeste()
         {
             var evento = new EventoModel()
@@ -36,8 +38,9 @@ namespace CRUDAPI.Models;
                 nome = "Jose",
                 cpf = "05050505050",
                 email = "joseluiz@gmail.com",
-        
-                type = "F"
+                 type = "F",
+                
+               
             };
 
             var evento2 = new EventoModel(){
@@ -45,7 +48,8 @@ namespace CRUDAPI.Models;
                 cpf = "01010101010",
                 email = "analuiza@gmail.com",
                 
-                type = "C"
+                type = "C",
+               
 
             };
             _eventoRepo.Incluir(evento);

@@ -15,10 +15,12 @@ import { UsuariosService } from 'src/app/usuarios.service';
 export class UsuariosComponent implements OnInit {
 
   formulario: any;
+    
   tituloFormulario!: string;
   usuarios! : Usuario[];
   visibilidadeTabela : boolean = true;
   visibilidadeFormulario : boolean = false;
+  
 
   constructor(private usuariosService: UsuariosService) { }
 
@@ -43,22 +45,7 @@ export class UsuariosComponent implements OnInit {
     });
   }
 
-  get nome(){
-    return this.formulario.get('nome')
-  }
-
-  get cpf(){
-    return this.formulario.get('cpf')
-  }
-
-  get email(){
-    return this.formulario.get('email')
-  }
-
-  get type(){
-    return this.formulario.get('type')
-  }
-
+  
   ExibirFormularioAtualizacao(usuarioId: number) : void{
     console.log(usuarioId);
     this.visibilidadeTabela=false;
@@ -115,6 +102,7 @@ export class UsuariosComponent implements OnInit {
 }
 
 
+
 ExcluirUsuario(usuarioId: number):void{
   this.usuariosService.ExcluirUsuario(usuarioId).subscribe(resultado=>{
     alert("Pessoa excluida com sucesso");
@@ -127,6 +115,23 @@ ExcluirUsuario(usuarioId: number):void{
 
 
 displayedColumns: string[] = ['nome', 'cpf', 'email', 'tipo','acoes' ];
+
+
+get nome(){
+  return this.formulario.get('nome')
+}
+
+get cpf(){
+  return this.formulario.get('cpf')
+}
+
+get email(){
+  return this.formulario.get('email')
+}
+
+get type(){
+  return this.formulario.get('type')
+}
 
   
 }

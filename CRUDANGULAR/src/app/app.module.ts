@@ -12,11 +12,15 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatListModule} from '@angular/material/list';
 import {MatTableModule} from '@angular/material/table';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { LoginViewComponent } from './login-view/login-view.component';
+import {MatSelectModule} from '@angular/material/select';
+import { InterceptorModule } from './Interceptor/interceptor.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UsuariosComponent
+    UsuariosComponent,
+    LoginViewComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +32,9 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatButtonModule,
     MatListModule,
     MatTableModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatSelectModule,
+    InterceptorModule
 
   ],
   providers: [HttpClientModule,UsuariosService],

@@ -15,5 +15,9 @@ namespace CRUDAPI.Models
         
         public string? email { get; set; }
         public string? type { get; set; }
+
+        
+
+        
     }
 }

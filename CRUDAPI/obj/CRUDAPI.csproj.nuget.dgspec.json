@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\guilherme.santos\\Desktop\\Teste1\\CRUDAPI\\CRUDAPI.csproj": {}
+    "C:\\Users\\guilherme.santos\\Desktop\\Teste1\\crudapi\\CRUDAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\guilherme.santos\\Desktop\\Teste1\\CRUDAPI\\CRUDAPI.csproj": {
+    "C:\\Users\\guilherme.santos\\Desktop\\Teste1\\crudapi\\CRUDAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\guilherme.santos\\Desktop\\Teste1\\CRUDAPI\\CRUDAPI.csproj",
+        "projectUniqueName": "C:\\Users\\guilherme.santos\\Desktop\\Teste1\\crudapi\\CRUDAPI.csproj",
         "projectName": "CRUDAPI",
-        "projectPath": "C:\\Users\\guilherme.santos\\Desktop\\Teste1\\CRUDAPI\\CRUDAPI.csproj",
+        "projectPath": "C:\\Users\\guilherme.santos\\Desktop\\Teste1\\crudapi\\CRUDAPI.csproj",
         "packagesPath": "C:\\Users\\guilherme.santos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\guilherme.santos\\Desktop\\Teste1\\CRUDAPI\\obj\\",
+        "outputPath": "C:\\Users\\guilherme.santos\\Desktop\\Teste1\\crudapi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\guilherme.santos\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.3, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.3, )"

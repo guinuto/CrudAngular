@@ -113,7 +113,7 @@
                     <input type="text" class="form-control" formControlName= "type" required=""/>
                 </div>
 
-                <div *ngIf="email.invalid" class="validationError">
+                <div *ngIf="type.invalid" class="validationError">
                     <p *ngIf="type.errors?.['required']">O Tipo de funcionario e obrigatorio</p>
                     <p *ngIf="type.errors?.maxlength">Digite um tipo valido</p>
                 </div>
@@ -140,4 +140,8 @@
     </div>
 
 </div>
+
+
+
+
  
